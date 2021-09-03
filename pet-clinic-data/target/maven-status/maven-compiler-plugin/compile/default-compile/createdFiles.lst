@@ -1,0 +1,5 @@
+com\pavelbelov\sfgpetclinic\model\Person.class
+com\pavelbelov\sfgpetclinic\model\Pet.class
+com\pavelbelov\sfgpetclinic\model\Vet.class
+com\pavelbelov\sfgpetclinic\model\Owner.class
+com\pavelbelov\sfgpetclinic\model\PetType.class
