@@ -6,21 +6,11 @@ import java.time.LocalDate;
  *  Created by Pavel Belov on 03.09.2021
  */
 
-public class Pet {
-
-    private Long id;
+public class Pet extends BaseEntity {
 
     private PetType petType;
     private Owner owner;
     private LocalDate birthDate;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
 
     public PetType getPetType() {
         return petType;

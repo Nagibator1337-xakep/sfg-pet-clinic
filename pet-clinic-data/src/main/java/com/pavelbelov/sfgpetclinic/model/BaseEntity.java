@@ -5,7 +5,6 @@ import java.io.Serializable;
 /**
  *  Created by Pavel Belov on 03.09.2021
  */
-
 public class BaseEntity implements Serializable {
 
     private Long id;
