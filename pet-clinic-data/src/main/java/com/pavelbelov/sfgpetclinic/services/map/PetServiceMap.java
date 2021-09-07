@@ -1,14 +1,15 @@
 package com.pavelbelov.sfgpetclinic.services.map;
 
 import com.pavelbelov.sfgpetclinic.model.Pet;
-import com.pavelbelov.sfgpetclinic.services.CrudService;
 import com.pavelbelov.sfgpetclinic.services.PetService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 /**
  * Created by Pavel Belov on 05.09.2021
  */
+@Service
 public class PetServiceMap extends AbstractMapService<Pet, Long> implements PetService {
     @Override
     public Set<Pet> findAll() {
