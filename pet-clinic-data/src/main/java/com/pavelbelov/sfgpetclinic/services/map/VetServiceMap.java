@@ -2,13 +2,14 @@ package com.pavelbelov.sfgpetclinic.services.map;
 
 import com.pavelbelov.sfgpetclinic.model.Vet;
 import com.pavelbelov.sfgpetclinic.services.CrudService;
+import com.pavelbelov.sfgpetclinic.services.VetService;
 
 import java.util.Set;
 
 /**
  * Created by Pavel Belov on 05.09.2021
  */
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
     @Override
     public Set<Vet> findAll() {
         return super.findAll();
