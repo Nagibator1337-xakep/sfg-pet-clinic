@@ -1,5 +1,14 @@
-com\pavelbelov\sfgpetclinic\model\Person.class
+com\pavelbelov\sfgpetclinic\services\OwnerService.class
 com\pavelbelov\sfgpetclinic\model\Pet.class
+com\pavelbelov\sfgpetclinic\services\map\PetServiceMap.class
+com\pavelbelov\sfgpetclinic\services\VetService.class
+com\pavelbelov\sfgpetclinic\services\PetService.class
+com\pavelbelov\sfgpetclinic\services\map\OwnerServiceMap.class
 com\pavelbelov\sfgpetclinic\model\Vet.class
-com\pavelbelov\sfgpetclinic\model\Owner.class
+com\pavelbelov\sfgpetclinic\services\CrudService.class
+com\pavelbelov\sfgpetclinic\services\map\AbstractMapService.class
 com\pavelbelov\sfgpetclinic\model\PetType.class
+com\pavelbelov\sfgpetclinic\model\BaseEntity.class
+com\pavelbelov\sfgpetclinic\model\Person.class
+com\pavelbelov\sfgpetclinic\model\Owner.class
+com\pavelbelov\sfgpetclinic\services\map\VetServiceMap.class
