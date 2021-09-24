@@ -3,7 +3,7 @@ package com.pavelbelov.sfgpetclinic.model;
 /**
  * Created by Pavel Belov on 13.09.2021
  */
-public class Specialty extends BaseEntity {
+public class Speciality extends BaseEntity {
 
     private String description;
 
