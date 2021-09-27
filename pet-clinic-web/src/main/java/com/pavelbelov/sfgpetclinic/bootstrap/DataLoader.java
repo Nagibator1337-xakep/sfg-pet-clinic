@@ -65,9 +65,9 @@ public class DataLoader implements CommandLineRunner {
         owner1.setId(1L);
         owner1.setFirstName("Pavel");
         owner1.setLastName("Belov");
-        owner1.setAddress("Kultury 83-6");
-        owner1.setCity("Chelyabinsk");
-        owner1.setTelephone("+7(936)462-83-26");
+        owner1.setAddress("ul. Pushkina, d. Kolotushkina");
+        owner1.setCity("Moscow");
+        owner1.setTelephone("+7(999)123-45-67");
 
         Pet pavelsPet = new Pet();
         pavelsPet.setPetType(savedCatPetType);
@@ -81,10 +81,10 @@ public class DataLoader implements CommandLineRunner {
         Owner owner2 = new Owner();
         owner2.setId(2L);
         owner2.setFirstName("Anton");
-        owner2.setLastName("Guskov");
-        owner2.setAddress("Kolhoznaya 31-34");
-        owner2.setCity("Chelyabinsk");
-        owner2.setTelephone("+7(908)576-28-32");
+        owner2.setLastName("Antonov");
+        owner2.setAddress("ul. Kolotushkina, d. Pushkina");
+        owner2.setCity("Saint-Petersburg");
+        owner2.setTelephone("+7(911)987-65-43");
 
         Pet antonsPet1 = new Pet();
         Pet antonsPet2 = new Pet();
