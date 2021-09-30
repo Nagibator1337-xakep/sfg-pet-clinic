@@ -1,12 +1,18 @@
 package com.pavelbelov.sfgpetclinic.model;
 
+import javax.persistence.Column;
+import javax.persistence.MappedSuperclass;
+
 /**
  *  Created by Pavel Belov on 03.09.2021
  */
-
+@MappedSuperclass
 public class Person extends BaseEntity {
 
+    @Column(name = "first_name")
     private String firstName;
+
+    @Column(name = "last_name")
     private String lastName;
 
     public String getFirstName() {
