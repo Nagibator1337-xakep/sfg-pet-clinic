@@ -4,6 +4,8 @@ import com.pavelbelov.sfgpetclinic.model.*;
 import com.pavelbelov.sfgpetclinic.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+import org.springframework.transaction.annotation.Transactional;
+
 
 import java.time.LocalDate;
 
@@ -11,6 +13,7 @@ import java.time.LocalDate;
  * Created by Pavel Belov on 07.09.2021
  */
 @Component
+@Transactional
 public class DataLoader implements CommandLineRunner {
 
     private final OwnerService ownerService;
@@ -106,12 +109,26 @@ public class DataLoader implements CommandLineRunner {
 
         ownerService.save(owner2);
 
-        Visit catVisit = new Visit();
-        catVisit.setPet(pavelsPet);
-        catVisit.setDate(LocalDate.of(2021,10,21));
-        catVisit.setDescription("Antibiotics shot");
+        Visit catVisit1 = new Visit();
+        catVisit1.setPet(pavelsPet);
+        catVisit1.setDate(LocalDate.of(2021,10,14));
+        catVisit1.setDescription("Antibiotics shot");
 
-        visitService.save(catVisit);
+        visitService.save(catVisit1);
+
+        Visit catVisit2 = new Visit();
+        catVisit2.setPet(pavelsPet);
+        catVisit2.setDate(LocalDate.of(2021,10,21));
+        catVisit2.setDescription("Antibiotics shot");
+
+        visitService.save(catVisit2);
+
+        Visit catVisit3 = new Visit();
+        catVisit3.setPet(antonsPet1);
+        catVisit3.setDate(LocalDate.of(2021,10,28));
+        catVisit3.setDescription("Antibiotics shot");
+
+        visitService.save(catVisit3);
 
         System.out.println("Loaded owners...");
 
