@@ -4,6 +4,15 @@
 /build/www/**
 /src/test/javascript/coverage/
 /src/test/javascript/PhantomJS*/
+pet-clinic-web/src/main/resources/messages/messages_ru.properties
+pet-clinic-web/target/.wro4j/
+pet-clinic-web/target/classes/messages/
+pet-clinic-web/target/classes/static/
+pet-clinic-web/target/classes/templates/fragments/
+pet-clinic-web/target/classes/templates/notimplemented.html
+pet-clinic-web/target/maven-archiver/
+pet-clinic-web/target/maven-status/
+pet-clinic-web/target/surefire-reports/
 
 ######################
 # Node
