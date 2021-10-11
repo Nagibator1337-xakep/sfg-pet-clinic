@@ -8,6 +8,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 import java.time.LocalDate;
+import java.util.HashSet;
 
 /**
  * Created by Pavel Belov on 07.09.2021
@@ -108,6 +109,23 @@ public class DataLoader implements CommandLineRunner {
         owner2.getPets().add(antonsPet2);
 
         ownerService.save(owner2);
+
+        Owner owner3 = Owner.builder()
+                .firstName("Alexey")
+                .lastName("Navalny")
+                .address("6, Frank Stolverk st.")
+                .city("Pokrov")
+                .telephone("+74924364105").build();
+
+        Pet alexsPet = Pet.builder()
+                .petType(savedDogPetType)
+                .birthDate(LocalDate.of(2021,2,20))
+                .name("Putin")
+                .owner(owner3).build();
+
+        owner3.getPets().add(alexsPet);
+
+        ownerService.save(owner3);
 
         Visit catVisit1 = new Visit();
         catVisit1.setPet(pavelsPet);
