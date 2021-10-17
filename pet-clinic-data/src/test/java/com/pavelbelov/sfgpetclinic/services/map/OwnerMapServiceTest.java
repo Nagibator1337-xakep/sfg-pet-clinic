@@ -6,6 +6,8 @@ import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -80,8 +82,27 @@ class OwnerMapServiceTest {
     }
 
     @Test
-    void findByLastNameFail() {
+    void findByLastNameNull() {
         Owner testOwner = ownerMapService.findByLastName("Foo");
         assertNull(testOwner);
     }
+
+    @Test
+    void findAllByLastName() {
+        ownerMapService.save(Owner.builder().id(2L).lastName("Foo").build());
+        ownerMapService.save(Owner.builder().id(3L).lastName("Bar").build());
+        ownerMapService.save(Owner.builder().id(4L).lastName(ownerLastName).build());
+
+        List<Owner> owners = ownerMapService.findAllByLastName(ownerLastName);
+        assertEquals(2,owners.size());
+        assertEquals(1L,owners.get(0).getId());
+        assertEquals(4L,owners.get(1).getId());
+    }
+
+    @Test
+    void findAllByLastNameEmpty() {
+        List<Owner> owners = ownerMapService.findAllByLastName("No Such Last Name");
+        assertEquals(0,owners.size());
+    }
+
 }
