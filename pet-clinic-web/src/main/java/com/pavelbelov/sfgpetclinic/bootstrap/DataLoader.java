@@ -8,7 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 
 import java.time.LocalDate;
-import java.util.HashSet;
 
 /**
  * Created by Pavel Belov on 07.09.2021
