@@ -39,6 +39,7 @@
                     </goals>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
 

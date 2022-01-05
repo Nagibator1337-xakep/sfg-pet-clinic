@@ -18,7 +18,6 @@ class OwnerMapServiceTest {
     Long ownerId = 1L;
     String ownerLastName = "Pinkman";
 
-
     @BeforeEach
     void setUp() {
 
