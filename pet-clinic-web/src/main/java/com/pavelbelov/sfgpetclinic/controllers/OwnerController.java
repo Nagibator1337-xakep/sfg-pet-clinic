@@ -27,8 +27,6 @@ public class OwnerController {
     }
     @RequestMapping("/find")
     public String findOwners(Model model) {
-        model.addAttribute("notimplemented",ownerService.findAll());
-
         return "notimplemented";
     }
 
