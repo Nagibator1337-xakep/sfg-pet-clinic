@@ -1,4 +1,4 @@
-# Pet Clinic — Учебный проект курса Spring Framework Guru
+## Pet Clinic — Учебный проект курса Spring Framework Guru
 
 Проект находится в разработке. 
 
