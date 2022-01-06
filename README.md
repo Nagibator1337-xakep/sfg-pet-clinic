@@ -1,4 +1,6 @@
 ## Pet Clinic — Учебный проект курса Spring Framework Guru
+[![CircleCI](https://circleci.com/gh/Nagibator1337-xakep/sfg-pet-clinic/tree/main.svg?style=svg)](https://circleci.com/gh/Nagibator1337-xakep/sfg-pet-clinic/tree/main)
+
 
 Проект находится в разработке. 
 
